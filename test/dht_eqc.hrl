@@ -1,5 +1,5 @@
 %% For simplicity, the test picks a smaller range in which to
-%% place nodes. This not only makes it easier to tets for corner cases,
+%% place nodes. This not only makes it easier to test for corner cases,
 %% it also makes it easier to figure out what happens in the routing table.
 -define(BITS, 7).
 -define(ID_MIN, 0).
