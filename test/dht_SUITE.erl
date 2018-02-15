@@ -87,4 +87,5 @@ check_state(_Config) ->
     ?quickcheck((dht_state_eqc:prop_component_correct())).
     
 check_state_cluster(_Config) ->
-    ?quickcheck((dht_state_eqc:prop_cluster_correct())).
+    ?quickcheck((dht_state_eqc:prop_component_correct())).
+
