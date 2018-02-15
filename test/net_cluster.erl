@@ -13,7 +13,7 @@ components() -> [
 	dht_time_eqc
 ].
 
-api_spec() -> api_spec(?MODULE).
+api_spec() -> eqc_cluster:api_spec(?MODULE).
 
 prop_cluster_correct() ->
     ?SETUP(fun() ->

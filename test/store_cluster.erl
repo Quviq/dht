@@ -3,7 +3,7 @@
 -include_lib("eqc/include/eqc.hrl").
 -include_lib("eqc/include/eqc_cluster.hrl").
 
--include("dht_eqc.hrl").
+-include("dht_eqc.hrl").
 
 -compile(export_all).
 
@@ -12,7 +12,7 @@ components() -> [
 	dht_time_eqc
 ].
 
-api_spec() -> api_spec(?MODULE).
+api_spec() -> eqc_cluster:api_spec(?MODULE).
 
 prop_cluster_correct() ->
     ?SETUP(fun() ->
